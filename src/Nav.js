@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/App.scss';
+import './styles/navStyle.scss';
 import { Link } from 'react-router-dom'
 
 function Nav() {
@@ -11,7 +12,7 @@ function Nav() {
 
   return (
     <nav>
-        <h3>Logo</h3>
+        <h1>Logo</h1>
         <ul className='nav-links'>
             <Link style={navStyle} to='/'>
                 <li button>Home</li>

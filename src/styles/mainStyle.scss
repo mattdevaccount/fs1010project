@@ -4,6 +4,12 @@
   border: 1px solid black;
   opacity: 0.5;
   color: black;
+  animation: fadeIn 3s linear;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 0.5;}
 }
 
 .replaced::after {
@@ -17,7 +23,7 @@
   32% { content: ' a sports fan'; }
   48% { content: ' a huge sitcom nerd'; }
   64% { content: ' a metalhead'; }
-  80% { content: ' travel addicted';}
+  80% { content: ' an avid reader';}
   100% { content: ' a big sci fi geek'; }
 }
 

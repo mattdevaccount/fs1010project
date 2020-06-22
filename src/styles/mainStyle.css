@@ -1,3 +1,85 @@
+.intro {
+  margin: 10%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  color: black;
+  -webkit-animation: fadeIn 5s linear;
+          animation: fadeIn 5s linear;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.replaced::after {
+  content: '';
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    content: ' a big sci fi geek';
+  }
+  16% {
+    content: ' an animal lover';
+  }
+  32% {
+    content: ' a sports fan';
+  }
+  48% {
+    content: ' a huge sitcom nerd';
+  }
+  64% {
+    content: ' a metalhead';
+  }
+  80% {
+    content: ' an avid reader';
+  }
+  100% {
+    content: ' a big sci fi geek';
+  }
+}
+
+@keyframes spin {
+  0% {
+    content: ' a big sci fi geek';
+  }
+  16% {
+    content: ' an animal lover';
+  }
+  32% {
+    content: ' a sports fan';
+  }
+  48% {
+    content: ' a huge sitcom nerd';
+  }
+  64% {
+    content: ' a metalhead';
+  }
+  80% {
+    content: ' an avid reader';
+  }
+  100% {
+    content: ' a big sci fi geek';
+  }
+}
+
 .typewriter {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -11,7 +93,6 @@
           animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-/* The typing effect */
 @-webkit-keyframes typing {
   from {
     width: 0;
@@ -20,6 +101,7 @@
     width: 100%;
   }
 }
+
 @keyframes typing {
   from {
     width: 0;

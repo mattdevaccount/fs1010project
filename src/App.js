@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
 import './styles/App.scss';
 import './styles/mainStyle.scss'
+import './styles/navStyle.scss';
 import Nav from './Nav';
 import About from './components/About'
 import Contact from './components/Contact'
@@ -30,10 +31,7 @@ const Home = () => (
   </div>
 
   <div className = 'intro'>
-    <div className = 'avatar'>
-      <img src={require('./images/avatar.png')} alt='' />
-    </div>
-      <p>Welcome to my page, I'm a student pursuing Full Stack Certification who loves to create websites</p>
+      <p>Welcome to my page, I'm a student pursuing Full Stack Certification who loves to create websites!</p>
       <p>I'm also <span class='replaced'></span></p>
   </div>
   </Fragment> 
