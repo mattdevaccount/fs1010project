@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
-import './App.scss';
+import './styles/App.scss';
+import './styles/mainStyle.scss'
 import Nav from './Nav';
 import About from './components/About'
 import Contact from './components/Contact'
@@ -25,12 +26,15 @@ function App() {
 const Home = () => (
   <Fragment>
   <div className = 'typewriter'>
-    <h1>Hey, I'm Matt, welcome to my page!</h1>
+    <h1>Hey, I'm Matt ! :)</h1>
   </div>
-  
-  <div className = 'mainBody'>
-    <p>I'm a student pursuing Full Stack Certification</p>
-    <p>I'm also a s</p>
+
+  <div className = 'intro'>
+    <div className = 'avatar'>
+      <img src={require('./images/avatar.png')} alt='' />
+    </div>
+      <p>Welcome to my page, I'm a student pursuing Full Stack Certification who loves to create websites</p>
+      <p>I'm also <span class='replaced'></span></p>
   </div>
   </Fragment> 
 )

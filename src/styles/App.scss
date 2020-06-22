@@ -10,7 +10,7 @@ nav {
     align-items: center;
     min-height: 10vh;
     background: #222831;
-    color: #32e0c4;
+    color: #32e0c4
   }
   
 .nav-links {
@@ -45,23 +45,12 @@ li {
 
 body {
   color: #32e0c4;
-  background-image: url(./images/greenspace.jpg);
+  background-image: url(../images/greenspace.jpg);
   font-family: 'Space Mono', monospace;
   }
 
-
-.typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+.avatar {
+  width: 50%; 
+  position: absolute;
+  opacity: 1.0;
+}

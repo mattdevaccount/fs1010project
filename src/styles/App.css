@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.App {
+  text-align: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  background: #222831;
+  color: #32e0c4;
+}
+
+.nav-links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.nav-links :visited {
+  color: #32e0c4;
+}
+
+.nav-links :hover {
+  background-color: transparent;
+  border: 1px #32e0c4 solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 120px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-links ::before {
+  border-radius: 30px;
+  border: 1px #32e0c4 solid;
+}
+
+li {
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 120px;
+}
+
+body {
+  color: #32e0c4;
+  background-image: url(../images/greenspace.jpg);
+  font-family: 'Space Mono', monospace;
+}
+/*# sourceMappingURL=App.css.map */
