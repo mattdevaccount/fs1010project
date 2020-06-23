@@ -27,11 +27,11 @@ function App() {
 const Home = () => (
   <Fragment>
   <div className = 'typewriter'>
-    <h1>Hey, I'm Matt ! :)</h1>
+    <h1>Hey, I'm Matt ! : )</h1>
   </div>
 
   <div className = 'intro'>
-      <p>Welcome to my page, I'm a student pursuing Full Stack Certification who loves to create websites!</p>
+      <p>Welcome ! I'm a student pursuing Full Stack Certification who loves to create websites!</p>
       <p>I'm also <span class='replaced'></span></p>
   </div>
   </Fragment> 

@@ -12,11 +12,13 @@ function Nav() {
 
   return (
     <nav>
-        <h1>Logo</h1>
+        <Link style={navStyle} to='/'>
+                <button>Logo</button>
+        </Link>
         <ul className='nav-links'>
-            <Link style={navStyle} to='/'>
-                <li button>Home</li>
-            </Link>
+            {/* <Link style={navStyle} to='/'>
+                <li button>Home</li> */}
+            {/* </Link> */}
             <Link style={navStyle} to='/contact'>
                 <li button>Contact</li>
             </Link>

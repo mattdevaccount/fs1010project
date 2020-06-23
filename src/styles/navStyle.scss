@@ -8,6 +8,7 @@ nav {
   }
   
 .nav-links {
+    transform: translate (-50%, -50%);
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -19,7 +20,7 @@ nav {
     margin: 10px;
     transition: all .5s ease;
         &:before {
-            content: ' ';
+            transform: translateX(-50%);
             border: 2px transparent solid;
             position: absolute;
             left: 50%;
@@ -44,14 +45,14 @@ nav {
         color: #32e0c4;
       }  
     }
-      :focus {
-          outline: none;
-          opacity: .2;
-      }
+
 
 li {
     border: 1px solid transparent;
     box-sizing: border-box;
     width: 120px;
 }
-  
+
+button:focus {
+    outline: none;
+}
