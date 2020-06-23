@@ -13,6 +13,8 @@ nav {
 }
 
 .nav-links {
+  -webkit-transform: translate -50%, -50%;
+          transform: translate -50%, -50%;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,24 +25,55 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  border: none;
+  margin: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.nav-links:before {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 2px transparent solid;
+  position: absolute;
+  left: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 120px;
+  height: 50px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-links :hover {
+  background-color: transparent;
+  border: 1px #32e0c4 solid;
+  border-radius: 20px;
+  height: 30px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-links :hoverbefore {
+  border-radius: 30px;
+  border: 1px #32e0c4 solid;
 }
 
 .nav-links :visited {
   color: #32e0c4;
 }
 
-.nav-links :hover {
-  background-color: transparent;
-  border: 1px #32e0c4 solid;
+li {
+  border: 1px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 120px;
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
 }
 
-.nav-links ::before {
-  border-radius: 30px;
-  border: 1px #32e0c4 solid;
+button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=navStyle.css.map */

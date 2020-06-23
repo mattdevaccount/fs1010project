@@ -27,7 +27,7 @@ function App() {
 const Home = () => (
   <Fragment>
   <div className = 'typewriter'>
-    <h1>Hey, I'm Matt ! : )</h1>
+    <h1>Hey, I'm Matt !</h1>
   </div>
 
   <div className = 'intro'>

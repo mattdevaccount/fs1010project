@@ -1,11 +1,11 @@
 .intro {
   margin: 10%;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   border: 1px solid black;
   opacity: 0.5;
-  color: black;
-  -webkit-animation: fadeIn 5s linear;
-          animation: fadeIn 5s linear;
+  color: #222831;
+  -webkit-animation: fadeIn 3s linear;
+          animation: fadeIn 3s linear;
 }
 
 @-webkit-keyframes fadeIn {
