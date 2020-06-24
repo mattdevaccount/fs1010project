@@ -6,6 +6,7 @@ import Nav from './Nav';
 import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
+import Footer from './components/Footer'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -27,13 +28,19 @@ function App() {
 const Home = () => (
   <Fragment>
   <div className = 'typewriter'>
-    <h1>Hey, I'm Matt !</h1>
+    <h1>Hey, I'm Matt Chan !</h1>
   </div>
 
-  <div className = 'intro'>
-      <p>Welcome ! I'm a student pursuing Full Stack Certification who loves to create websites!</p>
+  <div className = 'introText'>
+      <p>Welcome to my page ! I'm a student pursuing myFull Stack Certification who loves to create websites!</p>
       <p>I'm also <span class='replaced'></span></p>
   </div>
+
+  <section className='moreAbout'>
+    <img className='avatar' src = {require('./images/avatar.png')} alt = 'avatar' />
+    <p className='moreText'>Let's build something special together! Whether you're looking to find more functionality, flexibility or fun on your site, I'm your guy!</p>
+  </section>
+<Footer />
   </Fragment> 
 )
 

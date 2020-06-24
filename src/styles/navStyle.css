@@ -8,13 +8,11 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 10vh;
-  background: #222831;
-  color: #32e0c4;
+  background: #393e46;
+  color: #78cce2;
 }
 
 .nav-links {
-  -webkit-transform: translate -50%, -50%;
-          transform: translate -50%, -50%;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,18 +26,19 @@ nav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: none;
-  border: none;
+  border: 2px transparent solid;
   margin: 10px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
-.nav-links:before {
+.nav-links :before {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border: 2px transparent solid;
   position: absolute;
   left: 50%;
+  top: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 120px;
@@ -50,30 +49,22 @@ nav {
 
 .nav-links :hover {
   background-color: transparent;
-  border: 1px #32e0c4 solid;
+  border: 1px #78cce2 solid;
   border-radius: 20px;
+  width: 100px;
   height: 30px;
+  right: -40px;
+  top: 10px;
   -webkit-transition: all .7s ease;
   transition: all .7s ease;
 }
 
-.nav-links :hoverbefore {
-  border-radius: 30px;
-  border: 1px #32e0c4 solid;
-}
-
 .nav-links :visited {
-  color: #32e0c4;
-}
-
-li {
-  border: 1px solid transparent;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 120px;
+  color: #78cce2;
 }
 
 button:focus {
   outline: none;
+  opacity: .2;
 }
 /*# sourceMappingURL=navStyle.css.map */

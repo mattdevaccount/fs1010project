@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import '../styles/App.scss';
+import Footer from './Footer';
 
 function Portfolio() {
   return (
-    <div>
+    <Fragment>
       <h1>Portfolio Page</h1>
-    </div>
+    <Footer />
+    </Fragment>
   );
 }
 

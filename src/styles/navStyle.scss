@@ -1,14 +1,16 @@
+$mint: #78cce2;
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: #222831;
-    color: #32e0c4
+    background: #393e46;
+    color: $mint;
   }
   
 .nav-links {
-    transform: translate (-50%, -50%);
+    //transform: translate (-50%, -50%);
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -16,15 +18,16 @@ nav {
     list-style: none;
     box-sizing: border-box;
     background: none;
-    border: none;
+    border: 2px transparent solid;
     margin: 10px;
     transition: all .5s ease;
-        &:before {
+    //looking to rid the before section
+        :before {
             transform: translateX(-50%);
             border: 2px transparent solid;
             position: absolute;
             left: 50%;
-            // top: 0px;
+            top: 0px;
             box-sizing: border-box;
             width: 120px;
             height: 50px;
@@ -32,27 +35,21 @@ nav {
          }
       :hover {
         background-color: transparent;
-        border: 1px #32e0c4 solid;
+        border: 1px $mint solid;
         border-radius: 20px;
+        width: 100px;
         height: 30px;
+        right: -40px;
+        top: 10px;
         transition: all .7s ease;
-        &before {
-            border-radius: 30px;
-            border: 1px #32e0c4 solid;
-        }
+        
       }
       :visited {
-        color: #32e0c4;
+        color: $mint;
       }  
     }
 
-
-li {
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    width: 120px;
-}
-
 button:focus {
     outline: none;
+    opacity: .2;
 }
