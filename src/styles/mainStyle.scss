@@ -48,7 +48,10 @@
 .moreAbout {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-content: center;
+}
+
+.moreText {
+  padding-top: 10%;
 }
