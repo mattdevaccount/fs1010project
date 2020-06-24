@@ -32,13 +32,13 @@ const Home = () => (
   </div>
 
   <section className = 'introText'>
-      <p>Welcome to my page ! I'm a student pursuing myFull Stack Certification who loves to create websites!</p>
+      <p>Welcome to my page ! I'm a student pursuing my Full Stack Certification who loves to create websites!</p>
       <p>I'm also <span class='replaced'></span></p>
   </section>
 
   <section className='moreAbout'>
     <img className='avatar' src = {require('./images/avatar.png')} alt = 'avatar' />
-    <p className='moreText'>Let's build something special together! Whether you're looking to find more functionality, flexibility or fun on your site, I'm your guy!</p>
+    <p className='moreText'>Let's build something special together! Whether you're looking to find more functionality, flexibility or fun on your project, I'm your guy!</p>
   </section>
 
 

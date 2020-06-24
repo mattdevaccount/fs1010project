@@ -13,20 +13,20 @@ function Nav() {
   return (
     <nav>
         <Link style={navStyle} to='/'>
-                <button>Logo</button>
+                <li>Logo</li>
         </Link>
         <ul className='nav-links'>
             {/* <Link style={navStyle} to='/'>
                 <li button>Home</li> */}
             {/* </Link> */}
             <Link style={navStyle} to='/contact'>
-                <li button>Contact</li>
+                <li>Contact</li>
             </Link>
             <Link style={navStyle} to='/about'> 
-                <li button>About</li>
+                <li>About</li>
             </Link>
             <Link style={navStyle} to='/portfolio'> 
-                <li button>Portfolio</li>
+                <li>Portfolio</li>
             </Link>
         </ul>
     </nav>
