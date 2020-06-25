@@ -42,7 +42,7 @@ const Home = () => (
   </section>
 
   <section className='languageLogos'>
-    <p>Here are some of my competencies, including some of the languages used for this site</p>
+    <p>Here are some of my competencies, including some of the languages used for this site !</p>
     <img className='logos' src = {require('./images/logos.png')} alt = 'javascript' />
     <img className='reactLogo' src = {require('./images/reactLogo.png')} alt = 'reactjs' />
     <img className='nodeLogo' src = {require('./images/nodeLogo.png')} alt = 'nodejs' />
