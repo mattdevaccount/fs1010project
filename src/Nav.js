@@ -13,7 +13,7 @@ function Nav() {
   return (
     <nav>
         <Link style={navStyle} to='/'>
-                <li>Logo</li>
+                <img className='logo' src = {require('./images/logo.png')} alt = 'logo' />
         </Link>
         <ul className='nav-links'>
             {/* <Link style={navStyle} to='/'>

@@ -10,8 +10,7 @@ nav {
   }
   
 .nav-links {
-    //transform: translate (-50%, -50%);
-    width: 50%;
+    width: 370px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,18 +20,6 @@ nav {
     border: 2px transparent solid;
     margin: 10px;
     transition: all .5s ease;
-    //looking to rid the before section
-        // :before {
-        //     transform: translateX(-50%);
-        //     border: 2px transparent solid;
-        //     position: absolute;
-        //     left: 50%;
-        //     top: 0px;
-        //     box-sizing: border-box;
-        //     width: 120px;
-        //     height: 50px;
-        //     transition: all .7s ease;
-        //  }
       :hover {
         background-color: transparent;
         border: 1px $mint solid;
@@ -50,4 +37,10 @@ nav {
 button:focus {
     outline: none;
     opacity: .2;
+}
+
+.logo {
+  display: flex;
+  width: 165px;
+  margin: -10px;
 }
