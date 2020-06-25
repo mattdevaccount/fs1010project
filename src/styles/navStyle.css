@@ -13,7 +13,7 @@ nav {
 }
 
 .nav-links {
-  width: 50%;
+  width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,31 +32,14 @@ nav {
   transition: all .5s ease;
 }
 
-.nav-links :before {
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border: 2px transparent solid;
-  position: absolute;
-  left: 50%;
-  top: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 120px;
-  height: 50px;
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
-}
-
 .nav-links :hover {
   background-color: transparent;
   border: 1px #78cce2 solid;
   border-radius: 20px;
   width: 100px;
-  height: 30px;
-  right: -40px;
-  top: 10px;
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
+  height: 25px;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .nav-links :visited {
@@ -66,5 +49,13 @@ nav {
 button:focus {
   outline: none;
   opacity: .2;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 165px;
+  margin: -10px;
 }
 /*# sourceMappingURL=navStyle.css.map */
