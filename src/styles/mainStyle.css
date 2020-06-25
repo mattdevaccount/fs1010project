@@ -127,6 +127,19 @@
 }
 
 .moreText {
-  padding-top: 10%;
+  width: 800px;
+  padding-top: 7%;
+}
+
+.logos {
+  width: 150px;
+}
+
+.reactLogo {
+  width: 55px;
+}
+
+.nodeLogo {
+  width: 65px;
 }
 /*# sourceMappingURL=mainStyle.css.map */
