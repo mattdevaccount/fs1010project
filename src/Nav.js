@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/App.scss';
 import './styles/navStyle.scss';
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Nav() {
 
@@ -16,18 +16,15 @@ function Nav() {
             <img className='logo' src = {require('./images/logo.png')} alt = 'logo' />
         </Link>
         <ul className='nav-links'>
-            {/* <Link style={navStyle} to='/'>
-                <li button>Home</li> */}
-            {/* </Link> */}
-            <Link style={navStyle} to='/contact'>
+            <NavLink exact activeClassName='onPage' style={navStyle} to='/contact'>
                 <li>Contact</li>
-            </Link>
-            <Link style={navStyle} to='/about'> 
+            </NavLink>
+            <NavLink exact activeClassName='onPage' style={navStyle} to='/about'> 
                 <li>About</li>
-            </Link>
-            <Link style={navStyle} to='/portfolio'> 
+            </NavLink>
+            <NavLink exact activeClassName='onPage' style={navStyle} to='/portfolio'> 
                 <li>Portfolio</li>
-            </Link>
+            </NavLink>
         </ul>
     </nav>
   );

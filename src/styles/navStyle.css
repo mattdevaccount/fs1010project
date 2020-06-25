@@ -58,4 +58,14 @@ button:focus {
   width: 165px;
   margin: -10px;
 }
+
+.onPage {
+  background-color: transparent;
+  border: 1px #78cce2 solid;
+  border-radius: 20px;
+  width: 100px;
+  height: 25px;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
 /*# sourceMappingURL=navStyle.css.map */
