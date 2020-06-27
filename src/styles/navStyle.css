@@ -13,18 +13,13 @@ nav {
 }
 
 .nav-links {
-  width: 370px;
+  width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background: none;
   border: 2px transparent solid;
   margin: 10px;
@@ -42,13 +37,13 @@ nav {
   transition: all .6s ease;
 }
 
-.nav-links :visited {
-  color: #78cce2;
+.nav-links :active {
+  color: white;
+  background-color: #78cce2;
 }
 
-button:focus {
-  outline: none;
-  opacity: .2;
+.nav-links :visited {
+  color: #78cce2;
 }
 
 .logo {

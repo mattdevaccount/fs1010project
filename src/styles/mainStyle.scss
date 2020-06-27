@@ -1,3 +1,7 @@
+body {
+  font-size: 17px;
+}
+
 .intro {
   margin: 10%;
   background-color: #eeeeee;
@@ -5,6 +9,10 @@
   opacity: 0.5;
   color: #222831;
   animation: fadeIn 3s linear;
+}
+
+.introText {
+  margin-top: 15px;
 }
 
 @keyframes fadeIn {
@@ -42,7 +50,7 @@
   }
 
 .avatar {
-  width: 30%;
+  width: 33%;
 }
 
 .moreAbout {

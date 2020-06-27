@@ -6,12 +6,32 @@ import Footer from './Footer'
 function About() {
   return (
     <Fragment>
-      <h1>About Page</h1>
-      <section className = 'introduction'>
-        <div className = 'introText'>
-        <p>I began becoming interesting in web development when I was a kid, building Pokemon websites, video games guides, hosting it on Geocities (if you're old like me you'll remember), but fell out of it, until I had some conversations with some good friends, my father, and encouragement from my girlfriend, and here I am today pursuing my certification!</p>
+      <h3>My Full Stack Journey</h3>
+        <div className='timeline'>
+          <div className='timeline-body'>
+            <div className='timeline-item'>
+              <p className='time'>2015</p>
+                <div className='content'>
+                  <h3 className='title'>The seed was planted!</h3>
+                    <p>Reconnected with some childhood friends who became developers, who told me that they thought I'd enjoy it. Around this time, I was starting to realize I was not passionate about my work</p>
+                </div>
+            </div>    
+            <div className='timeline-item'>
+              <p className='time'>2016</p>
+                <div className='content'>
+                  <h3 className='title'>Taking charge, deciding to pivot</h3>
+                    <p>Starting to realize I was not passionate about the work I was doing, and wanted to do something about it. I reached out to my friends who encouraged me to try and self study for a bit to see if it was for me</p>
+                </div>
+            </div>    
+            <div className='timeline-item'>
+              <p className='time'>2019</p>
+                <div className='content'>
+                  <h3 className='title'>Taking the Leap</h3>
+                    <p>After a year and a half of what felt like slow progress, decided to take the leap and enrolled at a bootcamp to get my Full Stack Certification</p>
+                </div>
+            </div>     
+          </div>
         </div>
-      </section>
     <Footer />
     </Fragment>
   );
