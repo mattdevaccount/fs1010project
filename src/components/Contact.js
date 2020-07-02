@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import '../styles/App.scss';
 import '../styles/contactStyles.scss';
-//import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 import Footer from './Footer';
 import { Form, FormGroup, Col, Input, Label, Button, Container, CardBody, Card, CardText } from 'reactstrap'
 
@@ -31,9 +30,10 @@ const Contact = () => {
 
     return (
         <Container>
+        <Container className='formBody'>
             <Card className="text-white bg-secondary my-5 py-4 text-center">
                 <CardBody>
-                    <CardText className="text-white m-0">If you'd like to reach out to me, for collaboration, for projects, whatever, feel free to provide me with your info and I'll get back to you within 24 hours!</CardText>
+                    <CardText className="formText">If you'd like to reach out to me, for collaboration, for projects, whatever, feel free to provide me with your info and I'll get back to you within 24 hours!</CardText>
                 </CardBody>
             </Card>
             <Form className="my-5" onSubmit={formSubmit}>
@@ -59,7 +59,7 @@ const Contact = () => {
                 <FormGroup row>
                     <Label for="messageEntry" sm={2}>Message</Label>
                     <Col sm={10}>
-                    <Input type="textarea" name="text" id="messageEntry" required value={content} onChange={e => setContent(e.target.value)}/>
+                    <Input type="textarea" name="text" id="messageEntry" placeholder="Comments, collaboration requests, inquiries, anything!" required value={content} onChange={e => setContent(e.target.value)}/>
                     </Col>
                 </FormGroup>
                 <FormGroup check row>
@@ -68,6 +68,7 @@ const Contact = () => {
                     </Col>
                 </FormGroup>
             </Form>
+            </Container>
         <Footer />
         </Container>
       )

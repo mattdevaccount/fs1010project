@@ -2,11 +2,12 @@ $mint: #78cce2;
 
 footer {
     background-color: #393e46;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
-    padding: 13px;
-    padding-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 10px;
+
 }
 
 img {
@@ -18,7 +19,8 @@ img {
     justify-content: center;
     gap: 15px;
     :hover {
+        filter: hue-rotate(90deg);
         transition: transform .2s;
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
 }

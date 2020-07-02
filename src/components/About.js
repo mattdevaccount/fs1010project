@@ -3,6 +3,8 @@ import '../styles/App.scss';
 import '../styles/aboutStyle.scss';
 import Footer from './Footer'
 
+// the MVP of how I want the about page, looking to add hover effects on the timelines, clickable portions that can link to previous projects I worked on, etc.
+
 function About() {
   return (
     <Fragment>
@@ -30,6 +32,13 @@ function About() {
                     <p>After a year and a half of what felt like slow progress, decided to take the leap and enrolled at a bootcamp to get my Full Stack Certification</p>
                 </div>
             </div>     
+            <div className='timeline-item'>
+              <p className='time'>2020</p>
+                <div className='content'>
+                  <h3 className='title'>Being in the bootcamp</h3>
+                    <p>Took the bootcamp classes at York University part time while simulatenously working fulltime</p>
+              </div>
+            </div>
           </div>
         </div>
     <Footer />
