@@ -19,7 +19,7 @@ img {
     justify-content: center;
     gap: 15px;
     :hover {
-        filter: hue-rotate(90deg);
+        filter: invert(84%) sepia(12%) saturate(1914%) hue-rotate(175deg) brightness(94%) contrast(80%);
         transition: transform .2s;
         transform: scale(1.4);
     }
