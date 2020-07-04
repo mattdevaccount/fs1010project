@@ -3,9 +3,13 @@
 ## INSTRUCTIONS
 
 1) Start by opening the main folder and run `npm install` to install all required dependencies
-2) Start the application by running `npm start` command from the folder where the `App.js` component is found 
-3) The React site should be running on localhost:3000
+2) Start the application by running `npm start` command from the folder where the `App.js` component is found
+3) The React site should be running on localhost:3000, with the API running on localhost:4000 simultaneously.
 
-## The admin login user name is "MattDevAccount" and the password is "password", in order to access the data page that will display all the contact form submissions.
+## THINGS TO NOTE
+Please note that the `npm start` command will open a second localhost on 4000 to run the API for form submission. This will update the form list in real time and you can see the information that was submitted when you log into the admin portion of the site.
 
-Please note that the `npm start` command will open a second localhost on 4000 to run the API for form submission. This will update the form list in real time and you can see the information when you log into the admin portion of the site.
+## ADMIN LOGIN INFO
+
+Username: MattDevAccount
+Password: password
