@@ -3,7 +3,7 @@
 ## INSTRUCTIONS
 
 1) Start by opening the main folder and run `npm install` to install all required dependencies
-2) Start the application by running `npm start`
+2) Start the application by running `npm start` command from the folder where the `App.js` component is found 
 3) The React site should be running on localhost:3000
 
 ## The admin login user name is "MattDevAccount" and the password is "password", in order to access the data page that will display all the contact form submissions.

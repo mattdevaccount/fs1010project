@@ -24,7 +24,7 @@ export class Data extends React.Component {
     render() {
         return (
             <div>
-                <h1>Received Comments and Messages</h1>
+                <h1>Received Comments</h1>
                 { this.state.contactData.length > 0 && 
                 <ul className = 'mainList'>
                     {this.state.contactData.map(contactPerson => {

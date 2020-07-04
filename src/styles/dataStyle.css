@@ -6,6 +6,8 @@
 }
 
 .contactDude {
+    display: flex;
+    flex-direction: column;
     border: 1px #78cce2 solid;
     list-style-type: none;
 }

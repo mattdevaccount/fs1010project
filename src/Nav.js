@@ -29,6 +29,7 @@ function Nav() {
             <NavLink exact activeClassName='onPage' style={navStyle} to='/login'> 
                 <li>Admin</li>
             </NavLink>
+            {/* leaving admin to be separate in styling and hover state, not part of the "navigation" */}
     </nav>
   );
 }
