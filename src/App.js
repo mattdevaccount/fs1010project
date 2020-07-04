@@ -6,6 +6,7 @@ import Nav from './Nav';
 import About from './components/About'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
+import Login from './components/Login'
 import Footer from './components/Footer'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/about' component={About} />
           <Route path='/contact' component = {Contact} />
           <Route path='/portfolio' component = {Portfolio} />
+          <Route path='/login' component = {Login} />
         </Switch>
       </div>
     </Router>

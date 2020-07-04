@@ -6,6 +6,7 @@ function Portfolio() {
   return (
     <Fragment>
       <h1>Portfolio Page</h1>
+      <p>Stay tuned for more projects!</p>
     <Footer />
     </Fragment>
   );

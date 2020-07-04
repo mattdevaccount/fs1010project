@@ -26,6 +26,9 @@ function Nav() {
                 <li>Portfolio</li>
             </NavLink>
         </ul>
+            <NavLink exact activeClassName='onPage' style={navStyle} to='/login'> 
+                <li>Admin</li>
+            </NavLink>
     </nav>
   );
 }
