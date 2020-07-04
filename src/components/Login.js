@@ -38,7 +38,9 @@ loginCheck = async (e) => {
         this.setState({jwt:data.token})
         console.log(data);
   if (this.state.userName === 'MattDevAccount' && this.state.password === 'password'){
-    this.setState({loggedIn: true})
+    this.setState({loggedIn: true}) 
+    } else {
+      alert('Incorrect Credentials');
   }
 }
 
