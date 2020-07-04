@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../styles/App.scss';
 import '../styles/loginStyle.css';
 import Footer from './Footer';
@@ -8,18 +8,35 @@ import { Form, FormGroup, Input, Label, Button, Container } from 'reactstrap'
 class Login extends React.Component {
   constructor() {
     super();
-    this.state = {loggedIn: false, userName: '', password: ''};
+    this.state = {loggedIn: false, userName: '', password: '', jwt:''};
 
     this.loginCheck = this.loginCheck.bind(this)
     this.handleChange = this.handleChange.bind(this)
+    this.logOut = this.logOut.bind(this)
     };
 
 handleChange = (e) => {
   this.setState({[e.target.id]: e.target.value})
 }
 
-loginCheck = (e) => {
+logOut = (e) => {
   e.preventDefault()
+  this.setState({loggedIn: false})
+}
+
+loginCheck = async (e) => {
+  e.preventDefault()
+  const response = await fetch('http://localhost:4000/auth', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+                },
+            body: JSON.stringify({email: this.state.userName, password: this.state.password})
+        })
+  const data = await response.json();
+        this.setState({jwt:data.token})
+        console.log(data);
   if (this.state.userName === 'MattDevAccount' && this.state.password === 'password'){
     this.setState({loggedIn: true})
   }
@@ -28,7 +45,7 @@ loginCheck = (e) => {
   render () {
     return (
     <Container className='loginBody'>
-      { this.state.loggedIn ? <Data /> 
+      { this.state.loggedIn ? <Container><Button onClick={this.logOut}>Log Out</Button> <Data jwt={this.state.jwt} /> </Container>
       : <Container>
       
       <h1>Admin Login</h1>
