@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../styles/dataStyle.css';
 
 export class Data extends React.Component {
 
@@ -20,17 +21,16 @@ export class Data extends React.Component {
         this.setState({contactData: data})
     }
 
-
     render() {
         return (
             <div>
-                <h1>Data Page</h1>
+                <h1>Received Comments and Messages</h1>
                 { this.state.contactData.length > 0 && 
                 <ul className = 'mainList'>
                     {this.state.contactData.map(contactPerson => {
                         return (
-                            <li className='contactDude' key = {contactPerson.id}>
-                                <ul>
+                            <li key = {contactPerson.id}>
+                                <ul className='contactDude'>
                                     <li>{`Name: ${contactPerson.name}`}</li>
                                     <li>{`Email: ${contactPerson.email}`}</li>
                                     <li>{`Phone Number: ${contactPerson.phoneNumber}`}</li>
